@@ -12,7 +12,7 @@ RUN curl -L https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLY
   && tar -xf flyway-commandline-${FLYWAY_VERSION}.tar --strip-components=1 \
   && rm flyway-commandline-${FLYWAY_VERSION}.tar
 
-ENV PATH="/flyway:${PATH}"
+ENV PATH="/flyway:${/flyway/sql/}"
 
 ENTRYPOINT ["flyway"]
 CMD ["-?"]
